@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You ❤️</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      overflow: hidden;
+      padding: 20px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(12px);
+      border-radius: 28px;
+      padding: 28px;
+      text-align: center;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+      border: 1px solid rgba(255,255,255,0.25);
+      animation: fadeUp 1s ease;
+      position: relative;
+      z-index: 2;
+    }
+
+    .photo {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid rgba(255,255,255,0.7);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: white;
+      font-size: 30px;
+      margin-bottom: 14px;
+    }
+
+    p {
+      color: white;
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #fff7f8;
+    }
+
+    .heart {
+      position: absolute;
+      color: rgba(255,255,255,0.5);
+      animation: float 6s linear infinite;
+      font-size: 24px;
+      z-index: 1;
+    }
+
+    @keyframes float {
+      from {
+        transform: translateY(100vh) scale(0.5);
+        opacity: 0;
+      }
+      20% {
+        opacity: 1;
+      }
+      to {
+        transform: translateY(-120px) scale(1.2);
+        opacity: 0;
+      }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .footer {
+      margin-top: 22px;
+      color: rgba(255,255,255,0.8);
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="heart" style="left:10%; animation-delay:0s;">❤</div>
+  <div class="heart" style="left:25%; animation-delay:2s;">❤</div>
+  <div class="heart" style="left:50%; animation-delay:4s;">❤</div>
+  <div class="heart" style="left:75%; animation-delay:1s;">❤</div>
+  <div class="heart" style="left:90%; animation-delay:3s;">❤</div>
+
+  <div class="card">
+    <img src="https://i.imgur.com/yourimage.jpg" alt="foto kamu" class="photo">
+
+    <h1>Untuk Kamu ❤️</h1>
+
+    <p>
+      Dari sekian banyak orang yang pernah aku temui,
+      entah kenapa semesta malah bikin aku berhenti di kamu.
+      <br><br>
+
+      Kamu bukan cuma seseorang yang aku suka,
+      tapi seseorang yang bikin aku takut kehilangan.
+      Bukan karena aku ga percaya sama hubungan ini,
+      tapi karena aku terlalu nyaman setiap ada kamu.
+      <br><br>
+
+      Makasih ya udah hadir dengan cara yang ga pernah aku sangka.
+      Makasih udah jadi rumah paling tenang di saat kepala aku berisik.
+      Dan makasih karena tanpa sadar,
+      kamu bikin aku percaya lagi kalau dicintai itu ternyata seindah ini.
+      <br><br>
+
+      <span class="highlight">
+        Kalau suatu hari kamu nanya kenapa aku milih kamu,
+        jawabannya simpel:
+        karena cuma kamu yang bikin aku yakin kalau aku ga mau cari siapa-siapa lagi.
+      </span>
+    </p>
+
+    <div class="footer">
+      dibuat khusus buat orang paling spesial ✨
+    </div>
+  </div>
+
+</body>
+</html>
